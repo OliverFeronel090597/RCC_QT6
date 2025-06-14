@@ -1,0 +1,21 @@
+cd "C:\Users\O.Feronel\OneDrive - ams OSRAM\Documents\PYTHON\RCC_UPGRADE"
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/OliverFeronel090597/RCC_QT6.git
+git push -u origin main
+
+
+git rev-parse --show-toplevel  -- Show main dir
+
+
+git pull origin main --allow-unrelated-histories -- get all file in repo to align files
+
+
+git add .
+git commit -m "Merge with remote main"
+git push -u origin main
+
+
+git status
