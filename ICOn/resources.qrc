@@ -1,6 +1,12 @@
 <RCC>
   <qresource prefix="/resources">
-    <file>light.qss</file>
+    <file>77700338660.png</file>
     <file>SP_TitleBarMenuButton.png</file>
+    <file>ams_OSRAM.png</file>
+    <file>ams_OSRAM1.png</file>
+    <file>ams_OSRAM2.png</file>
+    <file>analize.png</file>
+    <file>animated-graph.png</file>
+    <file>light.qss</file>
   </qresource>
 </RCC>

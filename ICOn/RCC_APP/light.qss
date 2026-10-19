@@ -1,0 +1,241 @@
+/* ============================================================
+   RCC Resource Creator — light theme
+   ============================================================ */
+
+/* ---------- Global ---------- */
+QWidget {
+    background-color: #dfdfdf;
+    color: #2C3E50;
+    font-size: 11pt;
+    font-family: 'Segoe UI';
+}
+
+/* ---------- Buttons ---------- */
+QPushButton {
+    background-color: #3498DB;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 12px;
+}
+QPushButton:hover {
+    background-color: #2980b9;
+}
+QPushButton:pressed {
+    background-color: #1f6391;
+}
+QPushButton:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+}
+
+/* ---------- Labels ---------- */
+QLabel {
+    font-size: 11px;
+    font-weight: bold;
+    color: #34495e;
+    border: 1px solid #34495e;
+    border-radius: 2px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* ---------- Log output ---------- */
+QPlainTextEdit {
+    background-color: #fdfdfd;
+    border: 1px solid #c0c0c0;
+    border-radius: 6px;
+    padding: 4px;
+    font-size: 11px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #202020;
+    selection-background-color: #b3d7ff;
+    selection-color: #000000;
+}
+
+/* Vertical scrollbar inside QPlainTextEdit */
+QPlainTextEdit QScrollBar:vertical {
+    background: #f0f0f0;
+    width: 10px;
+    margin: 0px;
+    border: none;
+}
+QPlainTextEdit QScrollBar::handle:vertical {
+    background: #b3d7ff;
+    border-radius: 4px;
+}
+QPlainTextEdit QScrollBar::add-page:vertical,
+QPlainTextEdit QScrollBar::sub-page:vertical {
+    background: #f0f0f0;
+}
+QPlainTextEdit QScrollBar::up-arrow:vertical,
+QPlainTextEdit QScrollBar::down-arrow:vertical {
+    background: none;
+    height: 0px;
+}
+QPlainTextEdit QScrollBar::add-line:vertical,
+QPlainTextEdit QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* ---------- Menu bar & menus ---------- */
+QMenuBar {
+    background-color: #dfdfdf;
+    color: #2C3E50;
+    font-family: 'Segoe UI';
+    font-size: 11pt;
+    padding: 2px;
+}
+QMenuBar::item {
+    background: transparent;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+QMenuBar::item:selected {
+    background-color: #3498DB;
+    color: white;
+}
+QMenuBar::item:pressed {
+    background-color: #2980b9;
+    color: white;
+}
+
+QMenu {
+    background-color: #f7f7f7;
+    color: #2C3E50;
+    border: 1px solid #c0c0c0;
+    padding: 4px;
+}
+QMenu::item {
+    padding: 4px 24px 4px 24px;
+    border-radius: 3px;
+}
+QMenu::item:selected {
+    background-color: #3498DB;
+    color: white;
+}
+QMenu::item:disabled {
+    color: #7f8c8d;
+}
+QMenu::separator {
+    height: 1px;
+    background: #c0c0c0;
+    margin: 4px 8px;
+}
+
+/* ---------- Status bar ---------- */
+QStatusBar {
+    background-color: #dfdfdf;
+    color: #34495e;
+    font-family: 'Segoe UI';
+    font-size: 10pt;
+}
+
+/* ---------- Message box ---------- */
+QMessageBox {
+    background-color: #dfdfdf;
+}
+QMessageBox QPushButton {
+    min-width: 80px;
+}
+
+/* ---------- Tooltip ---------- */
+QToolTip {
+    background-color: #2C3E50;
+    color: white;
+    border: 1px solid #1a242f;
+    padding: 4px;
+}
+
+/* ============================================================
+   Scrollbars — global (QPlainTextEdit, QComboBox popup,
+   QFileDialog lists, QMenu overflow, etc.)
+   ============================================================ */
+
+/* ---------- Vertical ---------- */
+QScrollBar:vertical {
+    background: #f0f0f0;
+    width: 12px;
+    margin: 0px;
+    border: none;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #b3d7ff;
+    min-height: 24px;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #8ec2f5;
+}
+QScrollBar::handle:vertical:pressed {
+    background: #6aa9e8;
+}
+QScrollBar::handle:vertical:disabled {
+    background: #dcdcdc;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: #f0f0f0;
+}
+
+QScrollBar::up-arrow:vertical,
+QScrollBar::down-arrow:vertical {
+    background: none;
+    height: 0px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: none;
+}
+
+/* ---------- Horizontal ---------- */
+QScrollBar:horizontal {
+    background: #f0f0f0;
+    height: 12px;
+    margin: 0px;
+    border: none;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #b3d7ff;
+    min-width: 24px;
+    border-radius: 4px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #8ec2f5;
+}
+QScrollBar::handle:horizontal:pressed {
+    background: #6aa9e8;
+}
+QScrollBar::handle:horizontal:disabled {
+    background: #dcdcdc;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: #f0f0f0;
+}
+
+QScrollBar::left-arrow:horizontal,
+QScrollBar::right-arrow:horizontal {
+    background: none;
+    width: 0px;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+    background: none;
+}
+
+/* ---------- Corner where vertical & horizontal meet ---------- */
+QScrollBar::corner {
+    background: #f0f0f0;
+    border: none;
+}
